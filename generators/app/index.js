@@ -94,6 +94,14 @@ module.exports = Generator.extend({
         onlyFrontend: this.props.onlyFrontend
       }
     );
+    this.fs.copy(
+      this.templatePath('gulptasks/copynginx.js'),
+      this.destinationPath('gulptasks/copynginx.js')
+    );
+    this.fs.copy(
+      this.templatePath('nginx/project-*'),
+      this.destinationPath('src/nginx/')
+    );
     this.fs.copyTpl(
       this.templatePath('gulpfile.js'),
       this.destinationPath('gulpfile.js'),
