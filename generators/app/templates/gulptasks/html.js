@@ -29,5 +29,16 @@ gulp.task('build:html', function () {
         environment.addGlobal('projectFilesName', config.etc.formattedName);
       }
     }))
+
+    .pipe(nunjucksRender({
+      path: config.paths.src.templates_sections,
+      ext: '.html',
+      inheritExtension: false,
+      manageEnv: function (environment) {
+        environment.addGlobal('projectName', config.etc.projectName);
+        environment.addGlobal('projectFilesName', config.etc.formattedName);
+      }
+    }))
+
     .pipe(gulp.dest(baseDir.root));
 });
