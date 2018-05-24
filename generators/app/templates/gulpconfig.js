@@ -16,11 +16,11 @@ module.exports = {
       img: src + '/img/**/*.*',
       favicon: src + '/favicon.ico',
       fonts: src + '/fonts/**/*.*',<% if (onlyFrontend) { %>
-      templates_all: src + '/templates/**/*.njk',
+      templates_all: src + '/templates/**/**/*.njk',
       templates_dir: src + '/templates/',
       templates_partials: src + '/templates/seo/*.njk',
       templates_partials: src + '/templates/partials/*.njk',
-      templates_sections: src + '/templates/sections/*.njk',<% } %>
+      templates_sections: src + '/templates/sections/**/*.njk',<% } %>
       root: src,
       nginx: src + '/nginx/project-*'
     },
