@@ -1,16 +1,16 @@
 var last_known_scroll_position = 0;
 var ticking = false;
 
-var siteNavbar = document.querySelector('.navbar');
+var siteNavbar = document.querySelector('.nav');
 
 //navbar-fixed-top
 function doSomething(scroll_pos) {
   if (window.location.pathname === '/index.html' || window.location.pathname === '/' || window.location.pathname === '/project-name/index.html' || window.location.pathname === '/project-name/') {
     if (scroll_pos > 30) {
-      siteNavbar.classList.add('navbar-scroll');
+      siteNavbar.classList.add('nav-scroll');
 
     } else {
-      siteNavbar.classList.remove('navbar-scroll');
+      siteNavbar.classList.remove('nav-scroll');
     }
   }
 }
