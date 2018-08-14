@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     {% include 'seo/metatags.njk' %}
     {% block extra_css %}{% endblock %}
-    <link rel="stylesheet" href="css/{{ projectFilesName }}.libs.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/{{ projectFilesName }}.libs.css">
+    <link rel="stylesheet" href="/css/main.css">
     <title>Change - {% block title %}{% endblock %}</title>
-    <link runat="server" rel="shortcut icon" href="img/favicon/" type="image/x-icon"/>
-    <link runat="server" rel="icon" href="img/favicon/" type="image/ico"/>
+    <link runat="server" rel="shortcut icon" href="/img/favicon/" type="image/x-icon"/>
+    <link runat="server" rel="icon" href="/img/favicon/" type="image/ico"/>
     {% include 'seo/facebookpixel.njk' %}
   </head>
   <body>
@@ -23,10 +23,10 @@
     </div>
     {% block js_libs_config %}
     {% endblock %}
-    <script src="js/{{ projectFilesName }}.libs.js"></script>
+    <script src="/js/{{ projectFilesName }}.libs.js"></script>
     {% block js_project_config %}
     {% endblock %}
-    <script src="js/{{ projectFilesName }}.js"></script>
+    <script src="/js/{{ projectFilesName }}.js"></script>
     {% block js_inline %}
     {% endblock %}
   </body>
