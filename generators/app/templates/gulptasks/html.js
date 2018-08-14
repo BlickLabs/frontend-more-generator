@@ -17,7 +17,7 @@ gulp.task('build:html', function () {
     }))
 
     .pipe(data(function() {
-      return require('../src/json/data.json')
+      return require('../src/locales/es.json')
     }))
 
     .pipe(nunjucksRender({
