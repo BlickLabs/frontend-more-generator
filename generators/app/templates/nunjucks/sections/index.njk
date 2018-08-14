@@ -2,5 +2,12 @@
 
 {% block title %}This{% endblock %}
 
+{% set view_name = "homepage" %}
+
 {% block content %}
+<section class="home">
+  <section class="home-cover">
+    <h1>{{es.home.title}}</h1>
+  </section>
+</section>
 {% endblock %}
