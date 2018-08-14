@@ -1,15 +1,16 @@
 <footer class="footer">
   <div class="footer-logo-container">
     <a href="index.html">
-      <img src="img/logos/" alt="Logo of the footer">
+      <img src="{{es.footer.logo}}" alt="{{es.footer.logoAlt}}">
     </a>
   </div>
   <div>
-    <a href="index.html">
-      <span>Home</span>
-    </a>
-    <a href="">
-      <span>Contacto</span>
-    </a>
+    {% for section in es.footer.sections %}
+    <div>
+      <a href="{{section.link}}">
+        <span>{{section.name}}</span>
+      </a>
+    </div>
+    {% endfor %}
   </div>
 </footer>

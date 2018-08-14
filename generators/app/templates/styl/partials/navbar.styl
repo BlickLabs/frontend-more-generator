@@ -1,4 +1,4 @@
-.navbar
+.nav
   align-items center
   background-color gray
   display flex
@@ -23,6 +23,9 @@
 
   &-option
     color black
+
+    &.active
+      color white
 
     &:hover:before,
     &.active-section:before
@@ -52,11 +55,8 @@
     &-container
       display none
 
-.active-section
-  color white
-
 @media screen and (max-width: 876px)
-  .navbar
+  .nav
     justify-content space-between
     height 70px
     padding 0 18px
